@@ -2,6 +2,13 @@
 Connect 4 is a Python implementation of the classic two-player game "Connect 4" with AI-powered bots using **Minimax** and **Monte Carlo Tree Search (MCTS)** algorithms.
 Designed for developers, AI enthusiasts, and game lovers, this project provides an engaging way to explore game strategy and decision-making.  
 
+<p align="center">
+  <img src="Images/Minimax_win.png" alt="Minimax Winning Move" width="200" />
+  <img src="Images/Mtcs_win.png" alt="MCTS Winning Move" width="200" />
+  <img src="Images/Minimax_vs_Mtcs.png" alt="Minimax vs MCTS" width="200" />
+  <img src="Images/Random_game.png" alt="Random Gameplay Example" width="200" />
+</p>
+
 ## Features
 **Multiple Player Modes**:  
 - Human vs. Human  
