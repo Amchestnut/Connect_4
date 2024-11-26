@@ -12,5 +12,5 @@ score_yellow = 0
 
 square_size = SQUARE_SIZE
 width = COLUMN_COUNT * square_size
-height = (ROW_COUNT + 1) * square_size
+height = (ROW_COUNT + 2) * square_size
 size = (width, height)

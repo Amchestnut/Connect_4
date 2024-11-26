@@ -107,7 +107,7 @@ def main():
                     token = 1 if turn == 0 else 2
                     if human_move(token):
                         label = myfont.render(f"Player {token} wins!", 1, RED if token == 1 else YELLOW)
-                        screen.blit(label, (40, 10))
+                        screen.blit(label, (40, 70))
                         update_scores(token)
                         game_over = True
 
@@ -122,13 +122,13 @@ def main():
                 if player1_type == 'minimax':
                     if minimax_move(token):
                         label = myfont.render("Player 1 wins!", 1, RED)
-                        screen.blit(label, (40, 10))
+                        screen.blit(label, (40, 70))
                         update_scores(1)
                         game_over = True
                 elif player1_type == 'mcts':
                     if mcts_move(token):
                         label = myfont.render("Player 1 wins!", 1, RED)
-                        screen.blit(label, (40, 10))
+                        screen.blit(label, (40, 70))
                         update_scores(1)
                         game_over = True
                 draw_board(board, screen)
@@ -141,13 +141,13 @@ def main():
                 if player2_type == 'minimax':
                     if minimax_move(token):
                         label = myfont.render("Player 2 wins!", 1, YELLOW)
-                        screen.blit(label, (40, 10))
+                        screen.blit(label, (40, 70))
                         update_scores(2)
                         game_over = True
                 elif player2_type == 'mcts':
                     if mcts_move(token):
                         label = myfont.render("Player 2 wins!", 1, YELLOW)
-                        screen.blit(label, (40, 10))
+                        screen.blit(label, (40, 70))
                         update_scores(2)
                         game_over = True
                 draw_board(board, screen)
@@ -158,7 +158,7 @@ def main():
         # Check for draw
         if check_draw(board):
             label = myfont.render("It's a draw!", 1, (255, 255, 255))
-            screen.blit(label, (40, 10))
+            screen.blit(label, (40, 70))
             game_over = True
 
         if game_over:
